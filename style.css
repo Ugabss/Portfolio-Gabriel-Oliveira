@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2A2A2A;
+    color: #fff;
+}
+
+header {
+    background: #1E1E1E;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #FFD700;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #333;
+}
+
+.hero button {
+    background: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #222;
+}
+
+.servicos .card {
+    background: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#portfolio .item {
+    background: #444;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px;
+}
+
+#contato input, #contato textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contato button {
+    background: #FFD700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
