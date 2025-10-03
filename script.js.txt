@@ -1,0 +1,23 @@
+// FILTRO DE PORTFÓLIO POR CATEGORIA
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+function scrollToPortfolio(category){
+  // Exibe apenas os itens da categoria
+  portfolioItems.forEach(item => {
+    if(category === 'all' || item.getAttribute('data-category') === category){
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+  // Scroll suave para o portfólio
+  document.getElementById('portfolio').scrollIntoView({behavior:'smooth'});
+}
+
+// Scroll suave para links do menu
+document.querySelectorAll('nav a').forEach(link=>{
+  link.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});

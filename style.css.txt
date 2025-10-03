@@ -1,0 +1,58 @@
+/* RESET E TIPOGRAFIA */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Open Sans',sans-serif;background-color:#2A2A2A;color:#FFF;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+
+/* HEADER */
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;position:sticky;top:0;background:#2A2A2A;z-index:100;}
+.logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.8rem;color:#FFD700;}
+nav a{margin-left:30px;font-weight:600;transition:color 0.3s;}
+nav a:hover{color:#FFD700;}
+
+/* HERO SECTION */
+.hero{height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;background:#2A2A2A url('images/hero.jpg') no-repeat center/cover;position:relative;}
+.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.hero-content{position:relative;z-index:2;color:#FFF;}
+.hero h1{font-family:'Montserrat',sans-serif;font-size:3rem;margin-bottom:20px;}
+.hero p{font-size:1.2rem;margin-bottom:30px;}
+.btn{padding:12px 25px;background:#FFD700;color:#2A2A2A;font-weight:bold;border:none;cursor:pointer;transition:transform 0.3s;}
+.btn:hover{transform:scale(1.05);}
+
+/* SERVICES / BLOCOS */
+.services{padding:80px 50px;text-align:center;}
+.services h2{font-family:'Montserrat',sans-serif;font-size:2.5rem;margin-bottom:40px;color:#FFD700;}
+.service-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:30px;}
+.service-item{background:#333333;padding:30px 20px;border-radius:10px;cursor:pointer;transition:all 0.3s;flex:1 1 200px;}
+.service-item:hover{transform:translateY(-5px);}
+.service-item img{width:60px;margin-bottom:15px;}
+.service-item h3{color:#FFD700;}
+
+/* PORTFÓLIO */
+.portfolio{padding:80px 50px;text-align:center;}
+.portfolio h2{font-family:'Montserrat',sans-serif;font-size:2.5rem;margin-bottom:30px;color:#FFD700;}
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+.portfolio-item{position:relative;overflow:hidden;cursor:pointer;}
+.portfolio-item img{width:100%;transition:transform 0.5s;}
+.portfolio-item:hover img{transform:scale(1.1);}
+.overlay{position:absolute;bottom:0;width:100%;background:rgba(0,0,0,0.6);text-align:center;padding:15px 0;opacity:0;transition:opacity 0.3s;}
+.portfolio-item:hover .overlay{opacity:1;}
+
+/* SOBRE */
+.about{background:#333333;padding:80px 50px;text-align:center;}
+.about h2{font-family:'Montserrat',sans-serif;font-size:2.5rem;margin-bottom:30px;color:#FFD700;}
+.about-content{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:30px;}
+.about img{width:200px;border-radius:50%;border:3px solid #FFD700;}
+.about-text{max-width:600px;text-align:left;}
+
+/* CONTATO */
+.contact{padding:80px 50px;text-align:center;}
+.contact h2{font-family:'Montserrat',sans-serif;font-size:2.5rem;margin-bottom:30px;color:#FFD700;}
+.contact form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:15px;}
+.contact input,.contact textarea{padding:12px;border:2px solid #FFD700;background:#2A2A2A;color:#FFF;resize:none;}
+.contact button{padding:12px;background:#FFD700;border:none;color:#2A2A2A;font-weight:bold;cursor:pointer;transition:transform 0.3s;}
+.contact button:hover{transform:scale(1.05);}
+.socials{margin-top:20px;}
+.socials a{margin:0 10px;color:#FFD700;}
+
+/* FOOTER */
+footer{padding:20px;text-align:center;background:#2A2A2A;color:#FFF;}
